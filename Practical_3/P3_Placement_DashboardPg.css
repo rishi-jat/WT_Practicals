@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(20, 127, 157);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img {
+  margin: 10px;
+}
+
+span {
+  color: white;
+  font-size: 1.1rem;
+}
+
+hr {
+  height: 1px;
+  color: white;
+  width: 980px;
+  background-color: white;
+  margin: 25px 0;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.hdr-part1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+select {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  width: 120px;
+}
+
+.options {
+  margin: 0 8px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.campus-life {
+  width: 150px;
+}
+
+.international {
+  width: 125px;
+}
+
+.about-us {
+  width: 100px;
+}
+
+.academics {
+  width: 115px;
+}
+
+.admissions {
+  width: 120px;
+}
+
+.placement {
+  width: 115px;
+}
+
+option {
+  color: black;
+}
+
+input {
+  height: 20px;
+  width: 100px;
+  text-align: left;
+  padding: 3px;
+  margin-left: 7px;
+}
+
+.link1 {
+  text-decoration: none;
+  color: white;
+}
+
+.link1:hover {
+  cursor: pointer;
+  color: rgb(101, 205, 228);
+}
+
+.hdr-part2 {
+  margin-top: 0px;
+}
+
+.link2 {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.link2:hover {
+  cursor: pointer;
+  background-color: rgb(14, 96, 114);
+}
+
+.sidebar {
+  width: 250px;
+  height: 75vh;
+  background-color: rgb(8, 72, 93);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.side-links {
+  color: white;
+  text-decoration: none;
+  margin: 10px 15px;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.side-links:hover {
+  background-color: rgb(165, 222, 248);
+  color: rgb(5, 73, 98);
+}
+
+.main-part {
+  display: flex;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.content {
+  height: 75vh;
+  width: calc(100% - 250px);
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  display: flex;
+  margin: 30px;
+  margin-top: 15px;
+}
+
+.info {
+  margin-right: 40px;
+  gap: 20px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+h1 {
+  margin: 30px;
+  margin-bottom: 15px;
+}
+
+.profile-pics {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 9px auto;
+}
+
+.info-content li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.info:hover {
+  background-color: aliceblue;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 38vh;
+  background-color: rgb(211, 236, 246);
+}
+
+.get {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: bold;
+}
+
+.connected {
+  font-size: 1.8rem;
+  color: rgb(20, 127, 157);
+  font-weight: bold;
+}
+
+.mu-bg {
+  width: 100px;
+  height: 100px;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.get-connect {
+  margin-left: -65px;
+}
+
+.address {
+  width: 380px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.address h3 {
+  margin-bottom: 10px;
+  margin-top: -15px;
+  color: rgb(6, 86, 112);
+}
+
+.add-links {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.add-info {
+  display: flex;
+  margin-bottom: 6px;
+  margin-left: 5px;
+}
+
+.address i {
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.add-links:hover {
+  color: rgb(17, 186, 224);
+}
+
+.phone-no {
+  color: rgb(0, 0, 255);
+  font-size: 1rem;
+}
+
+.phone-no:hover {
+  color: black;
+}

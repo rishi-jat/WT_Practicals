@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="P2_EmployeeDetails_Form.css" />
+  </head>
+  <body>
+    <form>
+      <div class="header">
+        <img src="Pictures/Microsoft_Logo.png" alt="Company's Logo" />
+        <h1 class="company-name">Microsoft</h1>
+      </div>
+      <div class="title"><h2>Employee's Information</h2></div>
+      <table border="3" cellspacing="5" cellpadding="8">
+        <tr>
+          <td colspan="6" class="heading">Personal Information</td>
+        </tr>
+        <tr>
+          <td><label for="name">Full Name</label></td>
+          <td colspan="5">
+            <input
+              id="name"
+              name="full-name"
+              type="text"
+              placeholder="E.g. Last Name, First Name, Middle Name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2"><label for="address">Address</label></td>
+          <td colspan="3">
+            <input name="street-add" type="text" placeholder="Street Address" />
+          </td>
+          <td colspan="2">
+            <input
+              type="text"
+              name="apartment-name"
+              placeholder="Apartment Name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input name="city" type="text" placeholder="City" />
+          </td>
+          <td colspan="2">
+            <input name="state" type="text" placeholder="State" />
+          </td>
+          <td><input name="zipCode" type="text" placeholder="ZIP Code" /></td>
+        </tr>
+        <tr>
+          <td><label for="home_PhoneNo">Home Phone No.</label></td>
+          <td colspan="2">
+            <input name="home_PhoneNo" id="home_PhoneNo" type="tel" />
+          </td>
+          <td><label for="alt_PhoneNo">Alternate Phone No.</label></td>
+          <td colspan="2">
+            <input name="alt_PhoneNo" id="alt_PhoneNo" type="tel" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td colspan="5">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="E.g. xyz@gmail.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="govt-ID">Govt. ID</label></td>
+          <td colspan="5">
+            <input
+              id="govt-ID"
+              name="govt-ID"
+              type="text"
+              placeholder="E.g. Aadhar Card Number"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Birth Date</label></td>
+          <td colspan="2"><input name="dob" id="dob" type="date" /></td>
+          <td>
+            <label>Marital Status</label>
+          </td>
+          <td colspan="2">
+            <input
+              type="radio"
+              id="married"
+              value="married"
+              name="marital_status"
+              class="marital-status"
+            /><label for="married">Married</label>
+            <input
+              type="radio"
+              id="unmarried"
+              value="unmarried"
+              name="marital_status"
+              class="marital-status"
+            /><label for="unmarried">Unmarried</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="spouse-name">Spouse's Name</label></td>
+          <td colspan="5">
+            <input name="spouse-name" id="spouse-name" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="occupation">Spouse's Occupation</label></td>
+          <td colspan="2">
+            <input name="occupation" id="occupation" type="text" />
+          </td>
+          <td>
+            <label for="phoneNo"
+              >Spouse's Workplace<br />Phone No. (if employed)</label
+            >
+          </td>
+          <td colspan="2"><input name="phoneNo" id="phoneNo" type="tel" /></td>
+        </tr>
+        <tr>
+          <td colspan="6" class="heading">Job Information</td>
+        </tr>
+        <tr>
+          <td><label for="jobTitle">Title</label></td>
+          <td colspan="2">
+            <input name="jobTitle" id="jobTitle" type="text" />
+          </td>
+          <td><label for="empID">Employee ID</label></td>
+          <td colspan="2"><input name="empID" id="empID" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="supervisor">Supervisor</label></td>
+          <td colspan="2">
+            <input name="supervisor" id="supervisor" type="text" />
+          </td>
+          <td><label for="dept">Department</label></td>
+          <td colspan="2"><input name="dept" id="dept" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="location">Work Location</label></td>
+          <td colspan="2">
+            <input name="location" id="location" type="text" />
+          </td>
+          <td><label for="cell">Cell Phone</label></td>
+          <td colspan="2"><input name="cell" id="cell" type="tel" /></td>
+        </tr>
+        <tr>
+          <td><label for="work-email">Email</label></td>
+          <td colspan="2">
+            <input name="work-email" id="work-email" type="email" />
+          </td>
+          <td>
+            <label for="workplace-cell">Workplace<br />Phone No</label>
+          </td>
+          <td colspan="2">
+            <input name="workplace-cell" id="workplace-cell" type="tel" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="joining-date">Joining Date</label></td>
+          <td colspan="2">
+            <input name="joining-date" id="joining-date" type="date" />
+          </td>
+          <td><label for="salary">Salary</label></td>
+          <td colspan="2"><input name="salary" id="salary" type="number" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

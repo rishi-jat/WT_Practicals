@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Navigation Bar - Lab 11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-6">
+    <div class="w-full max-w-4xl">
+        <!-- Navigation Bar -->
+        <nav class="bg-white rounded-2xl shadow-lg mb-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <div class="h-9 w-9 rounded-lg bg-blue-600 flex items-center justify-center">
+                            <span class="text-white font-bold">N</span>
+                        </div>
+                        <span class="ml-3 text-xl font-semibold text-gray-800">Nancy</span>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#" class="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                        
+                        <!-- Services Dropdown -->
+                        <div class="relative group">
+                            <button class="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                                Services
+                                <i class="fas fa-chevron-down ml-1 text-xs mt-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-lg py-2 z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                    <i class="fas fa-laptop-code mr-3 text-blue-500"></i>
+                                    Web Development
+                                </a>
+                                <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                    <i class="fas fa-mobile-alt mr-3 text-green-500"></i>
+                                    Mobile Apps
+                                </a>
+                                <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                    <i class="fas fa-palette mr-3 text-yellow-500"></i>
+                                    UI/UX Design
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Products Dropdown -->
+                        <div class="relative group">
+                            <button class="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 font-medium flex items-center">
+                                Products
+                                <i class="fas fa-chevron-down ml-1 text-xs mt-1"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-lg py-2 z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                    <i class="fas fa-box mr-3 text-indigo-500"></i>
+                                    Product Suite
+                                </a>
+                                <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600">
+                                    <i class="fas fa-tools mr-3 text-gray-500"></i>
+                                    Developer Tools
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 font-medium">Pricing</a>
+                        <a href="#" class="px-4 py-2 rounded-lg text-gray-700 hover:text-blue-600 font-medium">About</a>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="#" class="px-4 py-2 text-gray-700 font-medium hover:text-blue-600">Log in</a>
+                        <a href="#" class="px-5 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 shadow-md">Sign up</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="text-gray-700 hover:text-blue-600">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Section -->
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Modern Navigation Bar</h1>
+            <p class="text-gray-600 mb-6">This is a clean, professional navigation bar with dropdown functionality built using Tailwind CSS.</p>
+            
+            <div class="flex flex-wrap gap-4 mt-8">
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 flex-1 min-w-[200px]">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Features</h2>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Smooth dropdowns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Clean UI</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100 flex-1 min-w-[200px]">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-2">Technologies</h2>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li class="flex items-start">
+                            <i class="fab fa-html5 text-orange-500 mt-1 mr-2"></i>
+                            <span>HTML5</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-css3-alt text-blue-500 mt-1 mr-2"></i>
+                            <span>Tailwind CSS</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-icons text-indigo-500 mt-1 mr-2"></i>
+                            <span>Font Awesome</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gadgets Store - Tailwind CSS</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-bolt text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">TechGadgets</h1>
+                        <p class="text-sm text-gray-600">Premium Electronics</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <button class="relative p-2 text-gray-600 hover:text-blue-600 transition-colors">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span
+                            class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button
+                        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                        <i class="fas fa-user mr-2"></i>Account
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Discover Amazing <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Tech
+                    Products</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+
+            <div
+                class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                    <div class="h-48 flex items-center justify-center">
+                        <img src="C:\Users\SHIRISH\HTML\Web-Technology\WT_Practicals\Pictures\WirelessHeadphones.jpeg"
+                            alt="Wireless Headphones"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                        -15% OFF
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Wireless Headphones</h3>
+                    <p class="text-gray-600 text-sm mb-4">Noise cancellation with 30hr battery</p>
+
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-2xl font-bold text-gray-900">₹4,299</span>
+                            <span class="text-lg text-gray-500 line-through ml-2">₹4,999</span>
+                        </div>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-3 mb-4">
+                        <p class="text-green-700 text-sm font-semibold">
+                            <i class="fas fa-credit-card mr-1"></i> Flat ₹500 Off on Axis Bank
+                        </p>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                    <div class="h-48 flex items-center justify-center">
+                        <img src="C:\Users\SHIRISH\HTML\Web-Technology\WT_Practicals\Pictures\AirPods.jpeg"
+                            alt="AirPods Pro"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                        -12% OFF
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AirPods Pro</h3>
+                    <p class="text-gray-600 text-sm mb-4">Active noise cancellation</p>
+
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-2xl font-bold text-gray-900">₹17,999</span>
+                            <span class="text-lg text-gray-500 line-through ml-2">₹19,999</span>
+                        </div>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-3 mb-4">
+                        <p class="text-purple-700 text-sm font-semibold">
+                            <i class="fas fa-percentage mr-1"></i> No Cost EMI Available
+                        </p>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-gray-700 to-blue-700 text-white py-3 rounded-lg font-semibold hover:from-gray-800 hover:to-blue-800 transition-all duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                    <div class="h-48 bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center">
+                        <img src="C:\Users\SHIRISH\HTML\Web-Technology\WT_Practicals\Pictures\PowerBank.jpg"
+                            alt="Power Bank"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Power Bank 20000mAh</h3>
+                    <p class="text-gray-600 text-sm mb-4">Fast charging, 3 USB ports</p>
+
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-2xl font-bold text-gray-900">₹1,899</span>
+                        </div>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-3 mb-4">
+                        <p class="text-orange-700 text-sm font-semibold">
+                            <i class="fas fa-bolt mr-1"></i> 18W Fast Charging
+                        </p>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-yellow-600 to-orange-600 text-white py-3 rounded-lg font-semibold hover:from-yellow-700 hover:to-orange-700 transition-all duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="relative overflow-hidden rounded-t-2xl">
+                    <div class="h-48 bg-gradient-to-br from-teal-100 to-green-100 flex items-center justify-center">
+                        <img src="C:\Users\SHIRISH\HTML\Web-Technology\WT_Practicals\Pictures\Webcamera.jpg"
+                            alt="4K Webcam"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                        -8% OFF
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">4K Webcam</h3>
+                    <p class="text-gray-600 text-sm mb-4">1080p with built-in microphone</p>
+
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-2xl font-bold text-gray-900">₹3,599</span>
+                            <span class="text-lg text-gray-500 line-through ml-2">₹3,899</span>
+                        </div>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-3 mb-4">
+                        <p class="text-teal-700 text-sm font-semibold">
+                            <i class="fas fa-microphone mr-1"></i> Noise Cancelling Mic
+                        </p>
+                    </div>
+
+                    <button
+                        class="w-full bg-gradient-to-r from-teal-600 to-green-600 text-white py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 60%;
+  height: auto;
+  background-color: lightpink;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.title h1 {
+  font-size: 36px;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.title p {
+  max-width: 600px;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+form {
+  padding: 25px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding: 8px;
+  margin: 0;
+}
+
+.st-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.st-info input {
+  height: 30px;
+  width: 260px;
+  border-radius: 4px;
+  border: 1px solid darkgray;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.streetAddress {
+  height: 30px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid darkgray;
+  padding: 5px;
+  margin: 5px;
+}
+
+.address input:not(.streetAddress) {
+  height: 30px;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid darkgray;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.add-head,
+.cnct-info,
+.courses {
+  margin-top: 16px;
+}
+
+.phone-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.phone-info input {
+  height: 30px;
+  width: 260px;
+  border-radius: 4px;
+  border: 1px solid darkgray;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.courses-in {
+  width: 98%;
+  height: auto;
+  background-color: white;
+  margin: 0;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.courses-in input {
+  height: 30px;
+  width: 160px;
+  border-radius: 4px;
+  border: 1px solid darkgray;
+  margin: 6px;
+  padding: 3px;
+  margin-left: 0%;
+}
+
+.course-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.course-main select {
+  height: 40px;
+  flex-grow: 1;
+  border: 1px solid darkgray;
+  border-radius: 1px;
+  padding: 4px;
+  margin: 0;
+}
+
+textarea {
+  width: 98%;
+  margin: 40px auto;
+  margin-bottom: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid darkgray;
+  display: flex;
+  flex-grow: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn {
+  background-color: rgb(248, 0, 157);
+  border: 1px solid rgb(248, 0, 157);
+  display: block;
+  margin: 1rem;
+}

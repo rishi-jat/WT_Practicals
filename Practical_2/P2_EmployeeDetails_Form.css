@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 60%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.company-name {
+  margin: auto 0;
+  font-size: 2.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  border: 3px solid black;
+  padding: 10px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 20px auto;
+  width: 60%;
+}
+
+input:not(.marital-status) {
+  height: 30px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.marital-status + label {
+  margin-right: 1rem;
+  display: inline-block;
+  cursor: pointer;
+}

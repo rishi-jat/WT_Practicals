@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="C:\Users\SHIRISH\HTML\Web Technology\Bootstrap\css\bootstrap.min.css">
+  <link rel="stylesheet" href="P2_StudentDetails_Form.css" />
+</head>
+
+<body>
+  <div class="main">
+    <form method="post" action="">
+      <div class="flex-container">
+        <img src="Pictures/Logo.svg" alt="Logo" width="150px" height="150px" />
+        <div class="title">
+          <h1>Student Registration Form</h1>
+          <p>
+            Fill out the form to apply for the training courses. You can
+            consider your application accepted after you receive a
+            confirmation email.
+          </p>
+        </div>
+      </div>
+      <h3>Student Information</h3>
+      <div class="st-info">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+        <input type="text" name="middleName" id="middleName" placeholder="Middle Name" />
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+        <input type="date" name="dob" id="dob" placeholder="Date Of Birth" />
+        <input type="text" name="studentID" id="studentID" placeholder="Student ID" />
+      </div>
+      <h3 class="add-head">Address</h3>
+      <div class="address">
+        <input class="streetAddress" type="text" name="streetAddress" id="streetAddress" placeholder="Street Address" />
+        <input type="text" name="City" id="City" placeholder="City" />
+        <input type="text" name="State" id="State" placeholder="State / Province" />
+        <input type="text" name="Country" id="Country" placeholder="Country" />
+        <input type="text" name="zipCode" id="zipCode" placeholder="Zip Code" />
+      </div>
+      <h3 class="cnct-info">Contact Information</h3>
+      <div class="phone-info">
+        <input type="email" name="emailID" id="emailID" placeholder="Email" />
+        <input type="tel" name="contact_no" id="contact_no" placeholder="Phone Number" />
+      </div>
+      <h3 class="courses">Courses</h3>
+      <div class="course-main">
+        <div class="courses-in">
+          <input class="new-course" type="button" value="+ Add New Courses" />
+        </div>
+        <select id="courses-provided">
+          <option value="" selected disabled>Courses</option>
+          <option value="b.Tech">B.Tech</option>
+          <option value="BCA">BCA</option>
+          <option value="B.Pharma">B.Pharma</option>
+          <option value="BBA">BBA</option>
+          <option value="B.Com">B.Com</option>
+        </select>
+        <select id="courses-lvl">
+          <option value="" selected disabled>Level</option>
+          <option value="easy">Easy</option>
+          <option value="moderate">Moderate</option>
+          <option value="difficult">Difficult</option>
+        </select>
+        <select id="courses-lang">
+          <option value="" selected disabled>Language</option>
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="hinglish">Hinglish</option>
+        </select>
+        <select id="course-date">
+          <option value="" selected disabled>Start Date</option>
+          <option value="date">01-08-2025</option>
+        </select>
+      </div>
+      <textarea placeholder="Comments" rows="4" cols="25"></textarea>
+      <div class="buttons">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="submit" value="Cancel">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

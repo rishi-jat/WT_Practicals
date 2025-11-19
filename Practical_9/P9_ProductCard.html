@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Cards</title>
+    <link rel="stylesheet" href="C:\Users\SHIRISH\HTML\Web-Technology\Bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="P9_ProductCard.css">
+    <script src="C:\Users\SHIRISH\HTML\Web-Technology\Bootstrap\js\bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Product Listing Cards</h1>
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-3 cards">
+                <div class="card h-100 custom-card">
+                    <img src="Pictures/WirelessHeadphones.jpeg" class="card-img-top custom-img" alt="Wireless Headphones" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Headphones</h5>
+                        <p class="card-text">₹4499</p>
+                        <p class="card-text discount">Flat INR 500 Off on Axis BankCards</p>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                            data-bs-target="#checkoutModal">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3 cards">
+                <div class="card h-100 custom-card">
+                    <img src="Pictures/SmartWatch.jpeg" class="card-img-top custom-img" alt="Smart Watch" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Watch</h5>
+                        <p class="card-text">₹2599</p>
+                        <p class="card-text discount">Flat INR 200 Off on ICICI BankCards</p>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                            data-bs-target="#checkoutModal">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3 cards">
+                <div class="card h-100 custom-card">
+                    <img src="Pictures/BluetoothSpeaker.jpeg" class="card-img-top custom-img" alt="Bluetooth Speaker" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Bluetooth Speaker</h5>
+                        <p class="card-text">₹4999</p>
+                        <p class="card-text discount">Up to 5% back with Amazon Pay ICICI card</p>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                            data-bs-target="#checkoutModal">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3 cards">
+                <div class="card h-100 custom-card">
+                    <img src="Pictures/AirPods.jpeg" class="card-img-top custom-img" alt="Air Pods" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Pods</h5>
+                        <p class="card-text">₹17999</p>
+                        <p class="card-text discount">Save extra with No Cost EMI</p>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                            data-bs-target="#checkoutModal">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="customerName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="customerName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="customerEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="customerEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Shipping Address</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="payment" class="form-label">Payment Method</label>
+                        <select class="form-select" id="payment" required>
+                            <option value="">Select...</option>
+                            <option>Credit Card</option>
+                            <option>Debit Card</option>
+                            <option>UPI</option>
+                            <option>Cash on Delivery</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success w-100">Confirm & Checkout</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
